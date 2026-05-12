@@ -127,3 +127,31 @@ figcaption {
     text-align: center;
     margin-top: 10px;
 }
+
+.love-note {
+    padding: 60px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.love-note-title {
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.love-note-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.love-note-body p {
+    font-family: "EB Garamond", serif;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0;
+
+}
