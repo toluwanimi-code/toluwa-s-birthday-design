@@ -100,3 +100,30 @@ hr {
     font-weight: 500;
     margin: 0;
 }
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-image {
+    margin: 0 auto;
+}
+
+.hero-image img {
+    max-width: 600px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #111;
+}
+
+figcaption {
+    font-family: "EB Garamond", serif;
+    font-size: 13px;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+}
