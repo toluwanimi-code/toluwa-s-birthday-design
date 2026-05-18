@@ -5,6 +5,8 @@ body {
     margin: 0;
     background-color: #f5f0e8;
     font-family: 'EB Garamond', serif;
+    border: 8px double #111;
+    min-height: 100vh;
 }
 
 .masthead-top {
@@ -44,12 +46,6 @@ hr {
     margin-bottom: 0;
 }
 
-.big-headline-section {
-    text-align: center;
-    padding: 10px 20px 40px;
-    margin-top: 0;
-}
-
 .section-divider {
     border: none;
     border-top: 1px solid #222;
@@ -57,10 +53,15 @@ hr {
     width: auto;
 }
 
+.big-headline-section {
+    text-align: center;
+    padding: 10px 20px 40px;
+    margin-top: 0;
+}
 
 .big-headline {
     font-family: 'Playfair Display', serif;
-    font-size: 44px;
+    font-size: 40px;
     font-weight: 900;
     letter-spacing: 2px;
     max-width: 1100px;
@@ -68,36 +69,11 @@ hr {
 }
 
 .big-subtitle {
-    font-family: 'EB Garamond', italics, serif;
+    font-family: 'EB Garamond', serif;
     font-size: 26px;
     font-weight: 400;
     font-style: italic;
     color: #2c2c2c;
-    margin: 0;
-}
-
-
-
-
-
-
-
-.big-headline {
-    font-family: "Playfair Display", serif;
-    font-size: 40px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    margin: 20px 0 10px;
-    max-width: 1100px;
-    margin: 20px auto 10px;
-}
-
-
-.big-subtitle {
-    color: #2c2c2c;
-    font-family: "EB Garamond", cursive;
-    font-size: 26px;
-    font-weight: 500;
     margin: 0;
 }
 
@@ -134,10 +110,10 @@ figcaption {
     margin: 0 auto;
 }
 
-
 .love-note-title {
-    font-family: "Playfair Display", serif;
+    font-family: 'Playfair Display', serif;
     font-size: 36px;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -152,6 +128,131 @@ figcaption {
     font-family: "EB Garamond", serif;
     font-size: 18px;
     line-height: 1.8;
-    margin: 0;
+    margin-bottom: 16px;
+}
 
+.love-note-body>div:first-child p:first-child::first-letter {
+    font-size: 64px;
+    font-weight: 900;
+    float: left;
+    line-height: 0.8;
+    margin-right: 8px;
+    font-family: 'Playfair Display', serif;
+}
+
+.love-note-signature {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 24px;
+}
+
+.qualities {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.qualities-title {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.qualities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quality-item {
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.quality-number {
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.quality-item p {
+    margin: 0;
+    font-family: "EB Garamond", serif;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.pull-quote {
+    text-align: center;
+    padding: 80px 40px;
+}
+
+.quote-text {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    font-style: italic;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.footer-text {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-date {
+    font-family: "EB Garamond", serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .masthead-title {
+        font-size: 48px;
+        letter-spacing: 2px;
+    }
+
+
+    .big-headline {
+        font-size: 28px;
+    }
+
+    .love-note-body {
+        grid-template-columns: 1fr;
+    }
+
+    .qualities-list {
+        grid-template-columns: 1fr;
+    }
+
+    .love-note {
+        padding: 40px 24px;
+    }
+
+    .qualities {
+        padding: 40px 24px;
+    }
+}
+
+.dark-banner {
+    background-color: #111;
+    padding: 40px;
+    text-align: center;
 }
